@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #373d7a;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coins li {
+  width: 80vh;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #1d1f2f;
+  box-shadow: 0 2px 9px rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coins li img {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+.coins li h2 {
+  color: #3058af;
+  margin-bottom: 2px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  color: #4176e8;
+  font-family: 'Bellota Text', sans-serif;
+}
+
+header {
+  background-image: url('../public/imgs/shark-logo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin-bottom: 2em;
+  margin-top: 1px;
+  height: 50vh;
+}
+
+h1 {
+  font-size: 120px;
+  color: rgb(45, 89, 234);
+  text-shadow: 5px 5px 10px #0712f5;
+}
+
+.rojo {
+  color: red;
+}
+
+.signoDolar {
+  color: #6b6d80;
+}
+
+.parrafoHeader {
+  color: rgb(237, 14, 88);
+  font-size: large;
+  text-shadow: 5px 5px 10px #ff0000eb;
+  font-weight: 900;
+  font-family: 'Bellota Text', sans-serif;
+}
+
+.buscador-container {
+  text-align: center;
+  font-family:'Bellota Text', sans-serif;
+}
+
+.buscador-input {
+  margin-left: 9px;
+  font-size: 20px;
+  padding: 5px;
+  border: 2px solid #736f6f;
+  border-radius: 15px;
+  width: 300px;
+}
+.buscador-label {
+  font-size: 20px;
+  color: rgba(9, 32, 110, 0.866);
+  font-family: 'Bellota Text';
+}
+
+.footer {
+  font-size: 16px;
+  padding: 10px 3;
+  text-align: center;
+  line-height: 10px;
+}
+
+
+
+
+
