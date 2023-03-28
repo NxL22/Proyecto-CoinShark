@@ -22,7 +22,7 @@ const Buscador = ({ setBusqueda }) => {
             <input
                 id='busqueda'
                 type='text'
-                placeholder=' ¿Cual coin bucearemos?'
+                placeholder=' ¿Cual coin bucearemos🤿?'
                 className='buscador-input'
                 value={input}
                 onChange={handleChange}
