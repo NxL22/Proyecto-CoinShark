@@ -24,7 +24,7 @@ const MiApi = ({ busqueda }) => {
                     market_cap: crypto.market_cap,
                 })); // y aca las recorridas con map se hacen un nuevo array
 
-                //Se ordenan las criptomonedas por market cap de mayor a menor, comparandose.
+            //Se ordenan las criptomonedas por market cap de mayor a menor, comparandose.
             cryptos.sort((a, b) => b.market_cap - a.market_cap);
             //se actualiza el estado de lo filtrado.
             setDatos(cryptos);
@@ -41,12 +41,16 @@ const MiApi = ({ busqueda }) => {
                         <img src={crypto.image} alt={crypto.name} />
                         <h2>{crypto.name}</h2>
                         <p>
-                            <strong>Precio:</strong> {crypto.current_price.toFixed(2)}
+                            <strong>Precio:</strong>{' '}
+                            {crypto.current_price.toLocaleString('en', {
+                                useGrouping: true,
+                                maximumFractionDigits: 2,
+                            })}
                             <strong>
-                                {' '}
                                 <span className='signoDolar'>$</span>
                             </strong>
                         </p>
+
                         <p>
                             <strong>Market Cap:</strong>{' '}
                             {crypto.market_cap.toLocaleString('en', {
