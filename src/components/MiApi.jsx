@@ -35,8 +35,8 @@ const MiApi = ({ busqueda }) => {
     //Aca se renderiza las criptos filtradas y ordenadas segun el metodo.
     return (
         <div className='coins'>
-            <ol>
-                {datos.map((crypto) => (
+            <ol> 
+                {datos.slice(0, 5).map((crypto) => ( // Acá limite a 5 el primer llamado a la API
                     <li key={crypto.id}>
                         <img src={crypto.image} alt={crypto.name} />
                         <h2>{crypto.name}</h2>
