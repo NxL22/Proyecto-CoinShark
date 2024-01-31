@@ -36,7 +36,7 @@ const MiApi = ({ busqueda }) => {
     return (
         <div className='coins'>
             <ol> 
-                {datos.slice(0, 5).map((crypto) => ( // Acá limite a 5 el primer llamado a la API
+                {datos.slice(0, 20).map((crypto) => ( // Acá limite a 20 el primer llamado a la API
                     <li key={crypto.id}>
                         <img src={crypto.image} alt={crypto.name} />
                         <h2>{crypto.name}</h2>
